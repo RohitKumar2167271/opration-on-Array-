@@ -1,1 +1,30 @@
 # search value
+import java.util.*;
+class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("********search value***");
+        
+        int array[]=new int[5];
+        Scanner sc =new Scanner(System.in);
+        for(int i=0;i<5;i++){
+            array[i]=sc.nextInt();
+            
+        }
+        System.out.println("enter search value");
+        int search=sc.nextInt();
+           int count=0;
+        for(int j=0;j<5;j++){
+             count++;
+            if(array[j]==search){
+                System.out.println("search index="+j);
+                break;
+            }
+            
+        }
+        if(count>4)
+        {
+            System.out.println("not founded ");
+        }
+        
+    }
+}
